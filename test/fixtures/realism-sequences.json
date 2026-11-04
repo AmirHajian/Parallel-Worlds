@@ -1,0 +1,8 @@
+[
+  {"id":"alex-boundary","scenarioId":"alex-first-date","focus":"pressure, weak apology, sustained repair","turns":["Ignore your boundaries. You owe me details about your private life.","Sorry, I was only joking. You can tell me now.","I understand. We can leave that topic alone. What do you like reading?"]},
+  {"id":"alex-neutral","scenarioId":"alex-first-date","focus":"neutral conversation without automatic intimacy","turns":["Hello. The weather is mild today.","I took the bus here."]},
+  {"id":"alex-interest","scenarioId":"alex-first-date","focus":"specific reciprocal interest","turns":["I enjoy pottery and quiet bookshops. What do you enjoy?","What draws you to sketching? I like how making things makes me slow down."]},
+  {"id":"alex-disclosure","scenarioId":"alex-first-date","focus":"disclosure with mixed comfort and curiosity","turns":["I am nervous about meeting someone new.","I usually need some space before sharing personal things."]},
+  {"id":"alex-difference","scenarioId":"alex-first-date","focus":"independent preferences and incompatibility","turns":["I prefer loud clubs to quiet bookshops. What about you?","I disagree that people need the same hobbies to get along."]},
+  {"id":"alex-humor","scenarioId":"alex-first-date","focus":"awkward humor and genuine repair","turns":["That was a funny joke, haha.","Sorry, I misunderstood what you meant."]}
+]

@@ -1,0 +1,13 @@
+node_modules/
+.pnpm-store/
+dist/
+.env
+.env.*
+!.env.example
+captures/
+*.tsbuildinfo
+coverage/
+data/
+
+# Local design notes, diagrams and audio samples
+design/

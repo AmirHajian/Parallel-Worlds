@@ -1,0 +1,46 @@
+{
+  "name": "parallel-worlds",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n api,web \"pnpm dev:server\" \"pnpm dev:web\"",
+    "dev:server": "tsx watch server/index.ts",
+    "dev:web": "vite --host 127.0.0.1",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "build": "pnpm typecheck && vite build",
+    "start": "tsx server/index.ts",
+    "probe": "tsx tools/probe.ts",
+    "probe:appraisal": "tsx tools/probe-appraisal.ts",
+    "probe:adaptation": "tsx tools/probe-adaptation.ts",
+    "probe:steering": "tsx tools/probe-steering.ts",
+    "evaluate:adaptation": "tsx tools/evaluate-adaptation.ts",
+    "evaluate:realism": "tsx tools/evaluate-realism.ts",
+    "review:realism": "tsx tools/review-realism.ts"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/ws": "^8.18.2",
+    "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^10.0.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5",
+    "ws": "^8.22.0"
+  }
+}
